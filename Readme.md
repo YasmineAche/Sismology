@@ -49,8 +49,7 @@ Your contributions will be reviewed, and if they align with the repository's goa
 
 ## Licence
 
-This repository and its contents are protected by copyright law. You are granted permission to use, modify, and distribute the code for non-commercial purposes, provided that:
+This repository is licensed under the [MIT License](LICENSE).
 
 You provide proper attribution to the original author (source) by mentioning the author's name in your project or derivative work.
 
-You do not sell, sublicense, or otherwise monetize the code, including any derivative works.
