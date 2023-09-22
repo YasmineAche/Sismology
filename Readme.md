@@ -49,7 +49,7 @@ Your contributions will be reviewed, and if they align with the repository's goa
 
 ## Licence
 
-This repository is licensed under the [MIT License](LICENSE).
+This repository is licensed under the [MIT License](LICENSE.md).
 
 You provide proper attribution to the original author (source) by mentioning the author's name in your project or derivative work.
 
