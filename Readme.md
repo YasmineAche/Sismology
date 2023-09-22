@@ -19,7 +19,7 @@ Seismology is the study of earthquakes and seismic waves. Python is a versatile 
 
 Here are some of the programs and scripts available in this repository:
 
-- [convert_EVT_to_Matlab.py](convert_EVT_to_Matlab.py): This program converts seismic data in 'kinemetrics_evt' format to MATLAB .mat files using ObsPy and SciPy.
+- [EVT_to_Matlab_converter.py](EVT_to_Matlab_converter.py): This program converts seismic data in 'kinemetrics_evt' format to MATLAB .mat files using ObsPy and SciPy.
 
 _Feel free to contribute by adding your own seismology-related Python programs._
 
