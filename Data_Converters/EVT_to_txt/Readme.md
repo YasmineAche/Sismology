@@ -42,6 +42,9 @@ Note: If you use or modify this code in your project, it's recommended to mentio
 
 This program is provided as-is, without any warranties or guarantees. Use it at your own risk.
 
+############################################################
+
+
 # Convertisseur_EVT_to_txt
 
 Ce programme Python est conçu pour convertir des données sismiques au format 'kinemetrics_evt' en fichiers texte (.txt). Il utilise la bibliothèque ObsPy pour lire les données sismiques, extraire les métadonnées et transformer les données de trace en un format de texte lisible. La conversion permet d'effectuer une analyse et une visualisation ultérieures des données sismiques.
