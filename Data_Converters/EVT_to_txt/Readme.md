@@ -42,8 +42,7 @@ Note: If you use or modify this code in your project, it's recommended to mentio
 
 This program is provided as-is, without any warranties or guarantees. Use it at your own risk.
 
-############################################################
-
+---
 
 # Convertisseur_EVT_to_txt
 
