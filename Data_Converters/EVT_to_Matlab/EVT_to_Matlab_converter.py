@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# coding: utf-8
-
+#!/usr/bin/python3
 
 """
 EVT_to_Matlab_converter
