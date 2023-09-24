@@ -85,7 +85,7 @@ if os.path.exists(event_name):
     # writing the sac file
     # Modify the output file name to include the channel ID
     for i, tr in enumerate(st):
-        output_file_name = f'{split_file_name[0][-14:-1]}.{split_file_name[1]}.{split_file_name[3]}_{tr.stats.channel}.SAC'
+        output_file_name = f'{split_file_name[0][-14:-1]}.{split_file_name[1]}.{split_file_name[3]}_{tr.stats.channel}.sac'
         output_file_path = os.path.join(path_to_directory, output_file_name)
         tr.write(output_file_path, format='SAC')
 
