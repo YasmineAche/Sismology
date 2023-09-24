@@ -47,11 +47,13 @@ event_name = input("\nDonnez le nom du fichier à convertir : ")
 if not os.path.exists(event_name):
     # Getting the current working directory's path as a start point for the search
     start_directory = os.getcwd()
-    event_not_found = False
+    
     # Searching for file in all subdirectories
     for root, _, files in os.walk(start_directory):
         if event_name in files:
             event_name = os.path.join(root, event_name)
+            event_not_found = False
+            break
         else:
             event_not_found = True
 
@@ -60,7 +62,7 @@ if not os.path.exists(event_name):
             f"ATTENTION : '{event_name}' n'existe ni dans '{start_directory}' ni dans ses sous-dossiers."
         )
 
-else:
+if os.path.exists(event_name):
     # reading the recording
     st = read(event_name, format="kinemetrics_evt").detrend()
 
