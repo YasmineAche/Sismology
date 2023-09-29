@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python3
 
+
 """
 EVT_to_Matlab_converter
 
@@ -46,7 +47,7 @@ event_name = input("\nDonnez le nom du fichier à convertir : ")
 if not os.path.exists(event_name):
     # Getting the current working directory's path as a start point for the search
     start_directory = os.getcwd()
-    
+
     # Searching for file in all subdirectories
     for root, _, files in os.walk(start_directory):
         if event_name in files:
@@ -74,9 +75,8 @@ if os.path.exists(event_name):
         tr.stats.channel = tr.stats.kinemetrics_evt.chan_id
 
         # Converting the data fron Conts to acceleration (cm/s²)
-        tr.data = (
-            (tr.data / tr.stats.kinemetrics_evt.chan_sensitivity) * tr.stats.calib * 100
-        )
+        tr.data = tr.data * tr.stats.calib * 100
+        
 
     # creating a directory to store the converted recoding
     directory_name = "Converted_event_to_Matlab"
