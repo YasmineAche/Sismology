@@ -45,7 +45,7 @@ event_name = input("\nDonnez le nom du fichier à convertir : ")
 if not os.path.exists(event_name):
     # Getting the current working directory's path as a start point for the search
     start_directory = os.getcwd()
-    
+
     # Searching for file in all subdirectories
     for root, _, files in os.walk(start_directory):
         if event_name in files:
@@ -65,15 +65,17 @@ if os.path.exists(event_name):
     st = read(event_name, format="kinemetrics_evt").detrend()
 
     # change the channel data
-    split_file_name = event_name.split('.')
+    split_file_name = event_name.split(".")
     for tr in st:
-        tr.stats.network = 'CGS'
+        tr.stats.network = "CGS"
         tr.stats.station = tr.stats.kinemetrics_evt.stnid
         tr.stats.location = split_file_name[1]
-        tr.stats.channel = tr.stats.kinemetrics_evt.chan_id     # adding the channel id directly to the channel variable so the id doesn't get lost during conversion
+        tr.stats.channel = (
+            tr.stats.kinemetrics_evt.chan_id
+        )  # adding the channel id directly to the channel variable so the id doesn't get lost during conversion
 
         # Converting the data fron Conts to acceleration (cm/s²)
-        tr.data = (tr.data / tr.stats.kinemetrics_evt.chan_sensitivity) * tr.stats.calib * 100
+        tr.data = tr.data * tr.stats.calib * 100
 
     # creating a directory to store the converted recoding
     directory_name = "Converted_event_to_SAC"
@@ -81,13 +83,11 @@ if os.path.exists(event_name):
         os.mkdir(directory_name)
     path_to_directory = os.path.abspath(directory_name)
 
-
     # writing the sac file
     # Modify the output file name to include the channel ID
     for i, tr in enumerate(st):
-        output_file_name = f'{split_file_name[0][-14:-1]}.{split_file_name[1]}.{split_file_name[3]}_{tr.stats.channel}.sac'
+        output_file_name = f"{split_file_name[0][-14:-1]}.{split_file_name[1]}.{split_file_name[3]}_{tr.stats.channel}.sac"
         output_file_path = os.path.join(path_to_directory, output_file_name)
-        tr.write(output_file_path, format='SAC')
-
+        tr.write(output_file_path, format="SAC")
 
     print("**** Operation terminée avec succès ****")
