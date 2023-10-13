@@ -42,7 +42,7 @@ print(
     "\n Avant de commencer, assurez-vous que vos données sont dans le même dossier (ou l'un de ses sous-dossiers) que le programme."
 )
 # EVT file that will be converted
-event_name = input("\nDonnez le nom du fichier à convertir : ")
+event_name = input("\nDonnez le nom du fichier à convertir : ").replace(" ", "")
 
 if not os.path.exists(event_name):
     # Getting the current working directory's path as a start point for the search
