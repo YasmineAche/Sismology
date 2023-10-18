@@ -89,8 +89,10 @@ if os.path.exists(event_name):
                 "# STATION %s\n" % (tr.stats.station),
                 "# CHANNEL %s\n" % (tr.stats.channel),
                 "# START_TIME %s\n" % (str(tr.stats.starttime)),
+                "# END_TIME %s\n" % (str(tr.stats.endtime)),
                 "# SAMPLE_FREQUENCY %f\n" % (tr.stats.sampling_rate),
                 "# NDAT %d\n" % (tr.stats.npts),
+                "# UNIT %s\n" % ("Acceleration cm/s²")
             ]
             f.writelines(header)
             np.savetxt(fname=f, X=tr.data, fmt="%f")
