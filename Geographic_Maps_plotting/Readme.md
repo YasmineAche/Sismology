@@ -70,7 +70,7 @@ The final map is saved as `Reseau National daccelerographe.png` in the current w
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md/Geographic_Maps_plotting) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md/..) file for details.
 
 ## Acknowledgments
 
@@ -81,5 +81,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md/Ge
 Feel free to modify and extend this script to suit your specific needs. Enjoy creating detailed geographical maps with ease!
 
 ## Author
-    Author: [Yasmine ACHEMINE]
-    Date: [June 5, 2023]
+    Author: Yasmine ACHEMINE
+    Date: June 5, 2023
