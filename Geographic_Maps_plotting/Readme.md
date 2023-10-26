@@ -21,7 +21,8 @@ Before running the script, ensure that you have the following prerequisites inst
 2. Ensure you have the necessary Excel files. The script expects two Excel files:
    - `ETNA2.xlsx`
    - `ETNA.xlsx`
-    In addition, you need a file containing your logo, and a shapefile with the city borders. All these files can be made optional by modifying the script to your needs.
+
+   In addition, you need a file containing your logo, and a shapefile with the city borders. All these files can be made optional by modifying the script to your needs.
 
 3. Save these Excel files in this script directory.
 
