@@ -22,7 +22,13 @@ Before running the script, ensure that you have the following prerequisites inst
    - `ETNA2.xlsx`
    - `ETNA.xlsx`
 
-   In addition, you need a file containing your logo, and a shapefile with the city borders. All these files can be made optional by modifying the script to your needs.
+   The Excel files should have these exact column names: ID, Wilaya, LAT, and LONG. See the image below:
+
+![Example of a table](ETNA2.png)
+
+	*IMPORTANT: Make sure that the float numbers are written with a point "." and not a comma ",".*
+
+	In addition, you need a file containing your logo, and a shapefile with the city borders. All these files can be made optional by modifying the script to your needs.
 
 3. Save these Excel files in this script directory.
 
