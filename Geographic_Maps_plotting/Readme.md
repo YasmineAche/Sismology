@@ -24,23 +24,23 @@ Before running the script, ensure that you have the following prerequisites inst
 
    The Excel files should have these exact column names: ID, Wilaya, LAT, and LONG. See the image below:
 
-![Example of a table](ETNA2.png)
+   ![Example of a table](ETNA2.png)
 
-	*IMPORTANT: Make sure that the float numbers are written with a point "." and not a comma ",".*
+   *IMPORTANT: Make sure that the float numbers are written with a point "." and not a comma ",".*
 
-	In addition, you need a file containing your logo, and a shapefile with the city borders. All these files can be made optional by modifying the script to your needs.
+   In addition, you need a file containing your logo, and a shapefile with the city borders. All these files can be made optional by modifying the script to your needs.
 
-3. Save these Excel files in this script directory.
+4. Save these Excel files in this script directory.
 
    You can modify the  file paths in the script if needed.
 
-4. Run the script using your Python interpreter.
+5. Run the script using your Python interpreter.
 
    ```bash
    python create_accelerograph_map.py
    ```
 
-5. The script will create a map and save it as `Reseau National daccelerographe.png` in the current working directory.
+6. The script will create a map and save it as `Reseau National daccelerographe.png` in the current working directory.
 
 ## Script Details
 
