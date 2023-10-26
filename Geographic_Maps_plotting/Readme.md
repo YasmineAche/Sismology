@@ -8,11 +8,11 @@ Before running the script, ensure that you have the following prerequisites inst
 
 - [Python](https://www.python.org/): The script is written in Python, so you need to have Python installed on your system.
 
-- [PyGMT](https://www.pygmt.org/latest/install.html): This script relies on the PyGMT library, which is used for generating the map.
+- [PyGMT](https://www.pygmt.org/latest/): This script relies on the PyGMT library, which is used for generating the map.
 
-- [Pandas](https://pandas.pydata.org/docs/getting_started/index.html): The script uses Pandas to read Excel files and create data frames.
+- [Pandas](https://pandas.pydata.org/): The script uses Pandas to read Excel files and create data frames.
 
-- [Geopandas](https://geopandas.org/en/stable/docs/install.html): Geopandas is used to work with shapefiles and geographical data.
+- [Geopandas](https://geopandas.org/en/stable/): Geopandas is used to work with shapefiles and geographical data.
 
 ## Usage
 
