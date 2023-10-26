@@ -70,7 +70,7 @@ The final map is saved as `Reseau National daccelerographe.png` in the current w
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md/..) file for details.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE.md) file for details.
 
 ## Acknowledgments
 
