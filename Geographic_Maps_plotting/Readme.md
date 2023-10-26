@@ -67,13 +67,10 @@ You can modify the map region by changing the `xmin`, `xmax`, `ymin`, and `ymax`
 
 The final map is saved as `Reseau National daccelerographe.png` in the current working directory.
 
-## Author
-
-[Yasmine ACHEMINE]
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md/Geographic_Maps_plotting) file for details.
 
 ## Acknowledgments
 
